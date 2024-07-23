@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Loan Calculator</h1>
+    <h2>The Simple Loan Calculator will determine your estimated payments for loan amounts,<br>
+        interest rates and terms.</h2>
+    <div class="calculator-container">
+        <form id="loan-form">
+            <div class="input-field">
+                <h3>1</h3>
+                <h4>Amount</h4>
+                <input type="number" id="loan-amount" name="loanAmount" required>
+                <img src="i.jpg" alt="" style="width: 19px;">
+            </div>
+            <div class="input-field">
+                <h3>2</h3>
+                <h4>Interest Rate (%)</h4>
+                <input type="number" id="interest-rate" name="interestRate" required>
+                <img src="i1.jpg" alt="" style="width: 19px;">
+            </div>
+            <div class="input-field">
+                <h3>3</h3>
+                <h4>Number of Years </h4>
+                <input type="number" id="loan-term"  spc="loanTerm" required>
+                <img src="i2.jpg" alt="" style="width: 19px;">
+            </div>
+            <button type="button" onclick="calculateLoan()">Calculate</button>
+        </form>
+        <div id="results">
+            <h5>Calculated Results</h5>
+            <div class="btn">
+                <p class="btn1">
+                    <span id="monthly-payment"></span>Monthly Payments:
+                </p>
+                <p class="btn2"> 
+                    <span id="total-interest"></span>Total Interest:
+                </p>
+                <p class="btn3">
+                    <span id="total-amount"></span>Total Amount:
+                </p>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
